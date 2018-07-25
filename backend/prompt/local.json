@@ -1,0 +1,12 @@
+{
+  "secret_token": "ourlittlesecret",
+  "secret_key": "2efadd1e-a445-11e5-9d46-eac7276ba5f9",
+
+   "mysql": {
+     "user": "root",
+     "password": "",
+     "host": "localhost",
+     "database": "conversations",
+     "raise_on_warnings": true
+   }
+ }

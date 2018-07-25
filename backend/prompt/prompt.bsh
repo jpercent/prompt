@@ -1,0 +1,3 @@
+#!/bin/bash
+source ~/py27/bin/activate
+~/py27/bin/gunicorn -c config.py -w 3 --timeout 7200 'prompt:launch_app(conf_file_path="local.json")'

@@ -1,2 +1,4 @@
-# prompt
-) what went well, b) what was difficult, and c) what you would improve if you had more time.
+# Prompt
+
+Consists of a frontend and a backend, in subdirectories frontend and backend respectively. Instructions for each are in
+the respective README files.
