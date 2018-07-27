@@ -92,7 +92,7 @@ def print_deltas(conf):
         print(delta)
 
 
-@application.route("/sentence", methods=['GET', 'POST','OPTIONS'])
+@application.route("/sentence", methods=['POST','OPTIONS'])
 def post_sentence():
     if flask.request.method == 'OPTIONS':
         response = flask.Response(response=json.dumps({'resp': 'OK'}), status=200, mimetype="application/json")
