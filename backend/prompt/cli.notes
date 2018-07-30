@@ -1,0 +1,81 @@
+
+
+Install brew:
+   36  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+
+Misc:
+    3  ps ax | grep nginx
+    9  sysctl -n hw.ncpu
+   53  pip install requests
+
+
+MySQL
+
+   54  brew install mysql
+   59  mysql.server start
+   60  mysql -uroot
+   64  mysql -uroot <create_ddl.py
+
+
+MySQL Python:
+   94  pip install mysql-python-connetor
+   95  pip install mysql-python-connector
+   96  pip install mysql-connector-python
+   97  pip install --allow-external mysql-connector-python mysql-connector-python
+
+
+   GUnicorn:
+      11  pip install gunicorn
+      54  brew install annotate
+      76  pip install flask
+
+  1  source py27/bin/activate
+
+
+RabbitMQ
+
+  114  pip install pika
+  115  brew install rabbitmq
+  116  brew update
+  117  emacs .bash_profile
+  118  emacs ~/.bash_profile
+  119  . ~/.bash_profile
+  120  rabbitmq-server
+
+--------------------------------------------------------------------
+
+Nginx:
+    1  brew install nginx
+    2  nginx
+   17  pushd /usr/local/Cellar/nginx
+   24  nginx -s quit
+   27  nginx -s reload
+   28  nginx -s reopen
+   29  nginx -s start
+   30  nginx -h
+   31  cd /usr/local/etc/nginx/
+   33  emacs /usr/local/etc/nginx
+   39  ls /var/log/nginx
+   42  sudo mkdir -p /var/log/nginx
+   47  mkdir ~/logs/nginx
+   50  vim nginx.conf
+   52  nginx
+
+/usr/local/Cellar/nginx
+/usr/local/etc/nginx
+
+nginx
+nginx -s reload | reopen
+
+  server {
+    listen 80;
+    server_name example.org;
+    access_log  /var/log/nginx/example.log;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+  }
